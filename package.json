@@ -1,0 +1,21 @@
+{
+  "name": "websockets-chatroom-for-fun",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Nathan Knowler",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "run-p start:*",
+    "start:chat-server": "node server.js",
+    "start:html-server": "servor",
+    "dev": "run-p start:html-server dev:chat-server",
+    "dev:chat-server": "nodemon server.js"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.2",
+    "npm-run-all": "^4.1.5",
+    "servor": "^3.1.0",
+    "ws": "^7.2.1"
+  }
+}
